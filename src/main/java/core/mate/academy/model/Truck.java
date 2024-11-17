@@ -30,7 +30,7 @@ public class Truck extends Machine {
         return typeOfFuel;
     }
 
-    public void setLoadCapacity(String typeOfFuel) {
+    public void setTypeOfFuel(String typeOfFuel) {
         this.typeOfFuel = typeOfFuel;
     }
 

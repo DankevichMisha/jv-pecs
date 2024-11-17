@@ -7,11 +7,11 @@ public class BulldozerProducer implements MachineProducer<Bulldozer> {
 
     @Override
     public List<Bulldozer> get() {
-        Bulldozer johnDeere = new Bulldozer("Name : John Deere 7930", " Color : Green",
+        Bulldozer johnDeere = new Bulldozer( "John Deere 7930", "Green",
                 220,
                 7.8,
                 390);
-        Bulldozer cat = new Bulldozer("Name : cat Chalenget MT865", "Color : Yellow",
+        Bulldozer cat = new Bulldozer("cat Chalenget MT865", "Yellow",
                 500,
                 18597,
                 330);
