@@ -28,6 +28,8 @@ public class MachineServiceImpl implements MachineService<Machine> {
             case TRUCK:
                 machineProducer = new TruckProducer();
                 return new ArrayList<>(machineProducer.get());
+            default :
+                return new ArrayList<>();
         }
     }
 
@@ -39,7 +41,7 @@ public class MachineServiceImpl implements MachineService<Machine> {
     }
 
     @Override
-    public void starWorking(List<? extends Machine> machines) {
+    public void startWorking(List<? extends Machine> machines) {
         for (Machine machine : machines) {
             machine.doWork();
         }
